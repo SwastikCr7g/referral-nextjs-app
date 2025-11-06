@@ -1,9 +1,6 @@
 // next.config.js
-const nextConfig = {
-  // 👇 This disables Turbopack (experimental), uses classic Webpack
+module.exports = {
   experimental: {
-    turbo: false,
+    turbo: false, // disables Turbopack, uses stable Webpack
   },
 };
-
-module.exports = nextConfig;
