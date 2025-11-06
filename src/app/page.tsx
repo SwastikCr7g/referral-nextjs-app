@@ -8,11 +8,12 @@ import LogoutButton from '@/components/LogoutButton';
 import CopyReferralLinkButton from '@/components/CopyReferralLinkButton';
 
 export default function Home() {
-  const user = useUserStore(state => state.user);
-  const credits = useUserStore(state => state.credits);
-  const referredCount = useUserStore(state => state.referredCount);
-  const convertedCount = useUserStore(state => state.convertedCount);
-  const referralCode = useUserStore(state => state.referralCode);
+  // Access Zustand state and actions
+  const user      = useUserStore((state) => state.user);
+  const credits   = useUserStore((state) => state.credits);
+  const referredCount   = useUserStore((state) => state.referredCount);
+  const convertedCount  = useUserStore((state) => state.convertedCount);
+  const referralCode    = useUserStore((state) => state.referralCode);
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">

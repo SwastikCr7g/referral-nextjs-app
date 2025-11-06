@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 
-interface UserState {
+export interface UserState {
   token: string;
   user: string;
   email: string;
